@@ -14,7 +14,7 @@ export const Country = () => {
         }
 
         fetchCountryData()
-    }, [])
+    }, [name])
 
 
     return (

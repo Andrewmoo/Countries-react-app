@@ -21,7 +21,7 @@ const Countries = () => {
             country.name.toLowerCase().match(searchText.toLowerCase())
           )
         );
-      }, []);
+      }, [searchText, countries]);
       const handleChange = (e) => {
         e.preventDefault();
         setSearchText(e.target.value);
